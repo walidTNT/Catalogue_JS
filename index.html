@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Configurateur d'offres professionnelles Orange</title>
+
+    <link rel="stylesheet" href="catalogue.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script src="javascript/catalogue.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--Instance with  paypal login email-->
+    <script type="text/javascript">
+        simpleCart.email = "walid@tanouti.com";
+        simpleCart.cartHeaders = ['Image','Name','Price','Description','Weight','Code'];
+        simpleCart.checkoutTo = PayPal;
+    </script>
+</head>
+
+<body>
+
+<div id="topFrame"><img src="images/logo.jpg" alt="catalogueOrange(js)"/></div>
+
+<div id="content">
+    <div id="header">
+        <h1>Les offres Orange</h1>
+    </div>
+
+    <ul id="catalog">
+
+        <li>
+            <img src="images/parcours/offre-1.jpg" alt="Offre 1" />
+            <span class="price">50€</span><b>Offre 1<br/><a href="#" onclick="simpleCart.add('quantity=1', 'name=Offre 1','price=50','image=images/thumbs/offre-1.jpg');return false;"> Ajouter au panier</a></b>
+        </li>
+
+        <li>
+            <img src="images/parcours/offre-2.jpg" alt="Offre 2" />
+            <span class="price">20€</span><b>Offre 2<br/><a href="#" onclick="simpleCart.add('quantity=1', 'name=Offre 1','price=20','image=images/thumbs/offre-2.jpg');return false;"> Ajouter au panier</a></b>
+        </li>
+
+        <li>
+            <img src="images/parcours/offre-3.jpg" alt="Offre 3" />
+            <span class="price">60€</span><b>Offre 3<br/><a href="#" onclick="simpleCart.add('quantity=1', 'name=Offre 3','price=60','image=images/thumbs/offre-3.jpg');return false;"> Ajouter au panier</a></b>
+        </li>
+
+        <li>
+            <img src="images/parcours/offre-4.jpg" alt="Offre 4" />
+            <span class="price">150€</span><b>Offre 4<br/><a href="#" onclick="simpleCart.add('quantity=1', 'name=Offre 4','price=150','image=images/thumbs/offre-4.jpg');return false;"> Ajouter au panier</a></b>
+        </li>
+
+        <li>
+            <img src="images/parcours/offre-5.jpg" alt="Offre 5" />
+            <span class="price">90€</span><b>Offre 5<br/><a href="#" onclick="simpleCart.add('quantity=1', 'name=Offre 5','price=90','image=images/thumbs/offre-5.jpg');return false;"> Ajouter au panier</a></b>
+        </li>
+
+    </ul>
+    <!--/ Catalogue-->
+
+
+    <div id="sidebar">
+        <h2 style="display:inline">Votre panier</h2>&nbsp;&nbsp;&nbsp;<a href="monCatalogue.html">Voir tout le panier</a>
+
+        <div class="simpleCart_items" ></div> <!-- Affichage des produits du panier-->
+
+        <a href="#" class="simpleCart_empty">Vider panier</a>
+        <a href="#" class="simpleCart_checkout">Déconnexion</a>
+
+    </div>
+
+    <div id="footer">
+        <img src="images/footer.png" alt="Footer Orange" />
+    </div>
+</div>
+</body>
+</html>
+
